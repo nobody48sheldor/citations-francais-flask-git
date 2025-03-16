@@ -12,8 +12,9 @@ def home():
 
 @app.route("/", methods=["GET", "POST"])
 def reload_website():
+    print("request incomming !")
     reload = request.form.get("pull_and_reload", None)
-    if reload != None:
+    if reload:
         print("os.system('git pull')")
         os.system("git pull")
     return(render_template("main.html"))

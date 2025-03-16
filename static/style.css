@@ -10,6 +10,7 @@
 }
 
 .button {
+	transition: 0.5s ease-in-out;
 	margin : 20pt;
 	text-align : center;
 	font-size : 10pt;
@@ -23,6 +24,17 @@
 	border: solid;
 	border-color: green;
 }
+
+.button:hover {
+	padding : 20pt;
+}
+
+.button:active {
+	transition: 0.05s ease-in-out;
+	border-color: red;
+}
+
+
 
 .red {
 	color: red;
