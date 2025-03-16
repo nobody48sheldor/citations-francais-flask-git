@@ -1,8 +1,27 @@
+.lign {
+}
+
+
 .title {
 	margin : 20pt;
 	text-align : center;
 	font-size : 50pt;
 	font-weight : bold;
+}
+
+.button {
+	margin : 20pt;
+	text-align : center;
+	font-size : 10pt;
+	font-weight : bold;
+	padding: 5pt;
+	text-decoration: none;
+	background-color: transparent;
+	color: black;
+	border-radius: 10pt;
+	box-shadow: 2px 2px 16px #000000;
+	border: solid;
+	border-color: green;
 }
 
 .red {
