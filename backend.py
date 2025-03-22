@@ -19,6 +19,9 @@ def reload_website():
         os.system("git pull")
     return(render_template("main.html"))
 
+@app.route("/pull")
+def pull():
+    return redirect(url_for('/'))
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0")
