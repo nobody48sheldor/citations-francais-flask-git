@@ -10,17 +10,13 @@ app.config['SECRET_KEY'] = os.urandom(24).hex()
 def home():
     return(render_template("main.html"))
 
-@app.route("/", methods=["GET", "POST"])
+@app.route("/pull", methods=["GET", "POST"])
 def reload_website():
     print("request incomming !")
     reload = request.form.get("pull_and_reload", None)
     if reload:
         print("os.system('git pull')")
         os.system("git pull")
-    return(render_template("main.html"))
-
-@app.route("/pull")
-def pull():
     return redirect("/")
 
 if __name__ == "__main__":
