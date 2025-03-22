@@ -17,8 +17,6 @@ def reload_website():
     if reload:
         print("os.system('git pull')")
         os.system("git pull")
-    else:
-        print("nothing here")
     return(render_template("main.html"))
 
 
