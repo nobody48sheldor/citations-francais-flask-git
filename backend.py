@@ -21,7 +21,7 @@ def reload_website():
 
 @app.route("/pull")
 def pull():
-    return redirect(url_for('/'))
+    return redirect(url_for(''))
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0")
