@@ -10,7 +10,7 @@ app.config['SECRET_KEY'] = os.urandom(24).hex()
 def home():
     return(render_template("main.html"))
 
-@app.route("/#", methods=["GET", "POST"])
+@app.route("/", methods=["GET", "POST"])
 def reload_website():
     print("request incomming !")
     reload = request.form.get("pull_and_reload", None)
