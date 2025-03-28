@@ -138,6 +138,7 @@ summary {
 hr.rounded {
   border-top: 5px solid #000000;
   border-radius: 2px;
+  margin: 10%;
 }
 
 div.space {
