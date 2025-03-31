@@ -111,6 +111,13 @@
 	font-size : 20pt;
 }
 
+.keyw {
+	margin : 20pt;
+	text-align : center;
+	font-size : 50pt;
+	font-weight : bold;
+}
+
 .commentaire {
 	margin: 10pt;
 	margin-left: 100pt;
